@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Brain_project</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+	</head>
+	<body>
+		<div class="wrap">
+			<div id="header">
+				<div class="left_head">
+					<ul class="left_nav">
+						<li class="nav_items"><a href="#slider" >Slider</a></li>
+						<li class="nav_items"><a href="#catalog">Catalog</a></li>
+						<li class="nav_items"><a href="#contacts">Contacts</a></li>
+					</ul>
+					<div class="drop_menu"></div>
+				</div>
+				<div class="right_head">
+					<ul class="right_nav">
+						<li class="profile_items search"></li>
+						<li class="profile_items account" onclick="show('flex')"></li>
+						<li class="profile_items basket" onclick="buildBasket()"></li>
+					</ul>
+				</div>
+				<div class="logo">
+					<img src="image/logo.png" alt="" class="logo_img ">
+				</div>
+			</div>
+			<div id="promo">
+				<img src="image/image.png" alt="" class="promo_img ">
+				<span class="name">Mans Style</span>
+				<span class="slogan">Eat meat. Dress well.</span>
+				<div class="promoButton">
+					<span class="myAccount btn" onclick="show('flex')"><a href="#" class="promoLink">My Account</a></span>
+					<span class="viewCollection btn"><a href="#" class="promoLink">View Collection</a></span>
+				</div>
+			</div>
+			<div id="slider">
+				<h2>Slider</h2>
+				<p class="sliderText">Maecenas ut vestibulum metus. Integer eros mi.</p>
+				<br>
+				<p class="sliderText">
+					Proin nulla purus, tincidunt interdum interdum et.
+				</p>
+					<div class="flex-slider hider">
+						<div id="slide_list">
+						</div>
+						
+					</div>
+					<div class="arrow leftArrow" id="slider_left" onclick="moveToLeft()"></div>
+					<div class="arrow rightArrow" id="slider_right" onclick="moveToRight()"></div>
+					<div id="sliderPagination">
+					</div>
+			</div>
+			<div id="catalog">
+				<h2>Catalog</h2>
+				<div class="table_flex">
+				<div id="table">
+					
+
+					<div class="pagin_div">
+						<a  class="pagination" onclick="buildList(data, 0, 9)">1</a>
+						<a  class="pagination" onclick="buildList(data, 10, 19)">2</a>
+						<a  class="pagination" onclick="buildList(data, 20, 29)">3</a>
+						<a  class="pagination" onclick="buildList(data, 30, 39)">4</a>
+						<a  class="pagination" onclick="buildList(data, 40, 49)">5</a>
+					</div>
+
+				</div>
+
+				<div id="img_for_table">
+					<img src="image/images.jpg" />
+				</div>
+
+			</div>
+			</div>
+		
+			<div id="about_us">
+				<h2>About us</h2>
+				<div class="about_flex">
+					<div class="about_item who_we_are">
+						<div class="item_block">
+								<h2>Who we are</h2>
+								<p class="about_text">Hayaku, fast in Japanese, is a handy shoe, with a double XXL Velcro fastening that will make your mornings easy as pie.</p>
+								<span class="read_more">read more</span>
+						</div>
+					</div>
+					<div class="about_item about_img1">
+
+					</div>
+					
+					<div class="about_item about_img2">
+					</div>
+					<div class="about_item what_we_do">
+						<h2>What we do</h2>	
+						<p class="about_text">Hayaku, fast in Japanese, is a handy shoe, with a double XXL Velcro fastening that will make your mornings easy as pie.</p>
+						<span class="read_more">read more</span>
+					</div>
+				</div>
+			</div>
+			<div id="contacts">
+				<h2>Contacts</h2>
+				<div class="contacts_flex">
+					<div class="addres">Steven Bernson, Attorney at Law
+						1556 Broadway, suite 416
+						New York, NY, 10120, USA </div>
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d578.0033955950183!2d-77.02389659300357!3d38.914116098228185!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe8039af67db17759!2sSteamboat!5e1!3m2!1sru!2sru!4v1483652866917" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+					<div class="email">
+						<span class="ph_numb">+380(99)-123-45-67</span>
+						<span class="ph_numb">+380(63)-123-45-67</span>
+						<span class="ph_numb">+380(67)-123-45-67</span>
+						<span class="ph_numb">example@gmail.com</span>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<div class="footer_flex">
+					<div class="social">
+						<div class="social_icon vk"><a href="#"></a></div>
+						<div class="social_icon fb"><a href="#"></a></div>
+						<div class="social_icon ggl"><a href="#"></a></div>
+						<div class="social_icon tw"><a href="#"></a></div>
+					</div>
+					<div class="year">2017</div>
+					<div class="links">
+						<span class="footer_nav"><a href="#">Promo</a></span>
+						<span class="footer_nav"><a href="#">Slider</a></span>
+						<span class="footer_nav"><a href="#">Catalog</a></span>
+					</div>
+				</div>
+			</div>
+			
+			<div id="account">
+					<img class="close" onclick="hide('none')" src="image/close.png" >
+					<h2>My account</h2>
+					<div class="account_flex">
+						<div id="login_window">
+							<h3>Login</h3>
+							<form action="">
+								<input type="email" id="email" name="email" placeholder="Your email" class="form"><br>
+								<input type="password" name="password" id="password" placeholder="Your password" class="form"><br>
+								<button id="login">LOGIN</button><br>
+								<span id="forgot_password">Forgot password?</span>
+							</form>
+						</div>
+						<div id="create_account_window">
+							<h3>Create Account</h3>
+							<form action="">
+								<input type="text" class="first_name form" name="first_name" placeholder="First name">
+								<input type="text" class="last_name form" name="last_name" placeholder="Last name"><br>
+								<input type="text" class="birthday form" name="birthday" placeholder="Your birthday:  dd/mm/yyyy">
+								<input type="text" class="phone_number form" name="phone_number" placeholder="Phone number"><br>
+								<input type="text" class="new_acc_email form" name="new_acc_email" placeholder="Email">
+								<select name="sex" id="sex" class="form">
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+								</select><br>
+								<input type="password" class="new_acc_password form" placeholder="Passoword">
+								<input type="password" class="confirm_password form" placeholder="Confirm password">
+								<input type="submit" id="create_acc_btn" value="Create Account" class="create_acc_btn">
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div id="flex-buy">
+					<img class="close" onclick="hide('none')" src="image/close.png">
+					<img src="image/bd/Брюки_Гамма04LV.jpg" alt="img" id="goodsURL">
+				
+					<div class="flex-goods">
+					
+						<h2 id="productName">Product name</h2>
+						<p id="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed modi maxime tenetur fugiat iusto, sequi ratione nobis eius in, voluptate, ullam officia ea voluptas similique sapiente mollitia excepturi dignissimos qui!</p>
+						<div class="special-Offer">
+							<p>Акция!  - <span id="showDiscont"></span>%</p>
+							<p>до конца осталось:</p>
+							<div class="days timerItem">
+								<span id="day" class="number"></span>
+								<p >Дни</p>
+							</div>
+
+							<div class="hours timerItem">
+								<span class="twoPoints">:</span><span id="hour" class="number"></span>
+								<p >Часы</p>
+							</div>
+							<div class="minutes timerItem">
+								<span class="twoPoints">:</span><span id="minute" class="number"></span>
+								<p >Мин</p>
+							</div>
+							<div class="seconds timerItem">
+								<span class="twoPoints">:</span><span id="second" class="number"></span>
+								<p >Сек</p>
+							</div>
+						</div>
+						<div class="buyButton">
+							<span>Цена:<span id="price"></span></span>
+							<span id="buyButton" onclick="addToBasket()" class="activeAddToBasket">Добавить в корзину!</span>
+						</div>
+					</div>
+				</div>
+				<div id="basket">
+					<img class="close" onclick="hide('none')" src="image/close.png" >
+					<h2>Your Basket</h2>
+					<table id="tableBasket">
+						
+					</table>
+					<div>
+						В сумме: <span class="sum">0</span>
+					</div>
+					<div>
+						<span class="activeAddToBasket">Оформить заказ</span>
+					</div>
+				</div>
+		</div>
+		<div id="popUp_bg" >
+		</div>
+		<div id="panel" class="panel">
+            <div class="panel-label">
+                <span>admin panel</span>
+            </div>
+            <div class="admin-content">
+            	<h2>Установить таймер</h2>
+            	<form id="adminForm">
+            		<span class="inputLabel">Месяцы:</span><input type="text" name="" id="setMonth" class="form"><br>
+            		<span class="inputLabel">Дни:</span><input type="text" name="" id="setDays" class="form"><br>
+            		<span class="inputLabel">Часы:</span><input type="text" name="" id="setHours" class="form"><br>
+            		<span class="inputLabel">Скидка</span><input type="text" name="" id="discont" class="form"><br>
+            		<span id="submitTimer" class="form" onclick="setTimer()">Принять</span>
+            	</form>
+            </div>
+        </div>
+		<script src="javascript/data.js"></script>		
+	<script src="javascript/main.js"></script>
+
+	</body>
+</html>

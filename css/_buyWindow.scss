@@ -1,0 +1,132 @@
+
+#flex-buy {
+	max-width: 768px;
+	max-height: 500px;
+	border: 1px solid green;
+	box-sizing: border-box;
+	background: $midle;
+	margin: 0 auto;
+	position: fixed;
+	display: none;
+	flex-flow: row nowrap;
+	padding: 10px;
+	top: 50%;
+	transform: translate(0%, -50%);
+	z-index: 300;
+	overflow-y: auto;
+	
+}
+#goodsURL {
+		transition: all 0.5s ease-out;
+		max-width: 200px;
+		height: 300px;
+		&:hover {
+		transform: scale(1.07, 1.07);
+		box-shadow: 3px 3px 5px 2px black;
+		cursor: pointer;
+	}
+}
+.flex-goods {
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	max-width: 73%;
+	padding: 10px;
+	padding-left: 25px;
+	box-sizing: border-box;
+
+}
+#discription {
+	text-indent: 25px;
+	padding-bottom: 20px;
+}
+.special-Offer {
+	display: none;
+	border: 2px solid tomato;
+	text-align: center;
+	padding: 10px;
+	p {
+
+		margin-bottom: 7px;
+		&:first-child {
+			color: tomato;
+		}
+	}
+}
+
+.timerItem {
+	display: inline-block;
+	margin-right: 5px;
+	p {
+		padding: 5px 0 0 0;
+		font-size: 14px;
+		margin: 0;
+	}
+	span {
+		display: inline-block;
+
+	}
+}
+.number {
+	background: white;
+	color: black;
+	font-weight: bold;
+	font-size: 24px;
+	padding: 4px 8px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	box-shadow: inset 0 0 15px;
+}
+.twoPoints {
+	margin-left: -7px;
+	margin-right: 3px;
+}
+
+
+
+.buyButton {
+	position: relative;
+	max-height: 20px;
+	padding: 10px;
+	text-align: center;
+}
+
+.activeAddToBasket {
+	display: inline-block;
+	padding: 10px;
+	border: 2px solid white;
+	background: #228B22;
+	&:hover {
+		transform: scale(1.03, 1.03);
+		
+		box-shadow: 3px 3px 5px 2px black;
+		cursor: pointer;
+	}
+}
+.disactiveAddToBasket {
+	display: inline-block;
+	padding: 10px;
+	border: 2px solid #228B22;
+	background: #c0c0c0;
+	color: #228B22;
+}
+#price {
+	display: inline-block;
+	padding: 10px;
+	font-weight: bold;
+	border: 1px solid #228B22;
+	background: $dark;
+
+}
+
+@media screen and(max-width: 650px) {
+	#flex-buy {
+		flex-flow: column;
+		align-items: center;
+	}
+	.flex-goods {
+		padding-left: 0;
+		padding-right: 0;
+		max-width: 94%;
+	}
+}

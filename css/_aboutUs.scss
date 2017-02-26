@@ -1,0 +1,42 @@
+#about_us {
+	background: $light;
+}
+.about_flex {
+	display: flex;
+	flex-flow: row wrap;
+		height: 500px;
+}
+.about_item {
+	width: 50%;
+	position: relative;
+	img {
+	height: 100%;
+	}
+}
+.about_img1 {
+	background: url('../image/about_us.png'); 
+}
+.about_img2 {
+	background: url('../image/about_us22.png');
+}
+.about_text {
+	text-align: center;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+.read_more {
+	position: absolute;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 5px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 2px solid white;
+	font-size: 14px;
+	&:hover {
+		background: $light;
+		color: $very_dark;
+		border: 2px solid $very_dark;
+		cursor: pointer;
+	}
+}

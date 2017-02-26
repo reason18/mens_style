@@ -1,0 +1,101 @@
+.imgForBasket {
+	width: 40px;
+}
+#basket {
+	display: none;
+	flex-flow: column nowrap;
+    max-width: 768px;
+	max-height: 500px;
+	overflow-y: auto;
+	margin: 0 auto;
+	border: 1px solid green;
+	position: fixed;
+	background: $dark;
+	top: 50%;
+	transform: translate(0%, -50%);
+	z-index: 300;
+	h2 {
+		background: $dark;
+	}
+	div {
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+#tableBasket {
+
+	background: $dark;
+	border-collapse: separate;
+	border-spacing: 0 10px;
+	width: 100%;
+
+	th {
+		padding: 10px 20px;
+		background: $dark;
+		font-size: 18px;
+		border-right: 2px solid $midle;
+		box-sizing: border-box;
+		&:last-child {
+		border-right: none;
+		}
+		&:nth-child(2) {
+			width: 40%;
+		}
+	}
+	td {
+		vertical-align: middle;
+		box-sizing: border-box;
+		padding: 10px;
+		font-size: 14px;
+		text-align: center;
+		background: $midle;
+		border-top: 2px solid $dark;
+		border-bottom: 2px solid $dark;
+		border-right: 2px solid $dark;
+		// color: $dark;
+		border-spacing: 0 10px;
+		box-sizing: border-box;
+		&:first-child {
+			border-left: 2px solid $dark;
+			max-width: 5%;
+		}
+		&:nth-child(2) {
+			border-right: none;
+		}
+	}
+}
+.sum {
+	padding: 10px;
+	font-weight: bold;
+	border: 1px solid #228B22;
+	background: $midle;
+}
+@media screen and(max-width: 650px) {
+	#basket {
+		th {
+			padding: 10px;
+		}
+		td {
+			padding: 5px;
+		}
+	}
+}
+@media screen and(max-width: 562px) {
+	#basket {
+		font-size: 12px;
+		th {
+			font-size: 12px;
+		}
+		td {
+			font-size: 12px;
+		}
+	}
+}
+#tableBasket td.remove-From-Basket {
+	cursor: pointer;
+	background: tomato;
+	
+}
+
+

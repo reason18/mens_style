@@ -1,0 +1,35 @@
+#contacts {
+	background: $midle;
+	padding-bottom: 20px;
+}
+
+
+.contacts_flex {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+.addres,
+.email {
+	text-align: center;
+	font-size: 14px;
+	padding: 10px;
+}
+.map {
+	// background: url('../image/map.jpg');
+	overflow: hidden;
+	min-width: 40%;
+	height: 250px;
+}
+@media screen and (max-width: 650px) {
+.addres,
+.email {
+	font-size: 12px;
+}
+}
+@media screen and (max-width: 525px) {
+.addres,
+.email {
+	font-size: 11px;
+}
+}

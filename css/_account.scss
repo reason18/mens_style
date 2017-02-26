@@ -1,0 +1,114 @@
+h3 {
+	color: white;
+	margin: 15px;
+	font-size: 18px;
+	text-align: center;
+}
+
+#popUp_bg {
+	display: none;
+	position: fixed;
+	width:100%;
+    height:1000px;
+    background-color: rgba(0,0,0,0.8);
+    overflow:hidden;
+    top:0px;
+    z-index: 100;
+}
+
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 200;
+	&:hover {
+		transform: scale(1.05, 1.05);
+		cursor: pointer;
+	}
+}
+
+
+#account {
+	display: none;
+	position: fixed;
+	max-width: 768px;
+	flex-flow: row wrap;
+	border: 2px solid green;
+	background: $midle;
+	padding-bottom: 15px;
+	top: 50%;
+	transform: translate(0%, -50%);
+	z-index: 300;
+	box-sizing: border-box;
+	h2 {
+		color: white;
+		min-width: 100%;
+	}
+}
+.account_flex {
+	display: flex;
+	flex-flow: row wrap;
+}
+#login_window {
+	box-sizing: border-box;
+	width: 35%;
+	text-align: center;
+	border-right: 2px solid white;
+}
+
+#create_account_window {
+	box-sizing: border-box;
+	width: 65%;
+	text-align: center;
+}
+.form {
+	max-width: 80%;
+	background: $dark;
+	padding: 10px;
+	border: $light;
+	margin-bottom: 15px;
+	color: white;
+	input {
+		width: 165px;
+	}
+}
+#forgot_password {
+	color: grey;
+	font-size: 10px;
+}
+#login {
+	width: 35%;
+	background: $dark;
+	border: 2px solid white;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	&:hover {
+		background: $light;
+		border: 2px solid $dark;
+		color: $dark;
+		cursor: pointer;
+	}
+
+}
+#create_acc_btn {
+	width: 189px;
+	background: $dark;
+	border: 2px solid white;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	&:hover {
+		background: $light;
+		border: 2px solid $dark;
+		color: $dark;
+		cursor: pointer;
+	}
+	
+}
+
+#sex {
+	min-width: 189px;
+}
+

@@ -1,0 +1,44 @@
+#footer {
+	background: $dark;
+	padding: 10px;
+}
+.footer_flex {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer_nav a {
+	transition: all 0.5s ease-out;
+	&:hover {
+		color: $light;
+	}
+}
+.social_icon {
+	display: inline-block;
+	height: 46px;
+	width: 46px;
+	&:hover {
+		transform: scale(1.1, 1.1);
+			transition: all 0.5s ease-out;
+		// box-shadow: 1px 1px 2px 2px ;
+		cursor: pointer;
+	}
+}
+.vk {
+	background: url('../image/social.png') -4px -8px;
+}
+.fb {
+	background: url('../image/social.png') -150px -8px;
+}
+.ggl {
+	background: url('../image/social.png') -53px -8px;
+}
+.tw {
+	background: url('../image/social.png') -200px -8px;
+}
+.year {
+	font-size: 12px;
+	color: $light;
+}

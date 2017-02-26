@@ -1,0 +1,153 @@
+#slider {
+	margin-top: -2px;
+	position: relative;
+	background: $light;
+	text-align: center;
+	min-height: 400px;
+}
+.sliderText {
+	display: inline-block;
+	margin-bottom: 15px;
+}
+.flex-slider {
+	position: relative;
+	max-width: 630px;
+	height: 238px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.slide {
+	max-width: 150px;
+	border: 1px solid black;
+
+}
+.slideImg {
+	height: 190px;
+	width: 150px;
+	img {
+		height: 190px;
+		width: 150px;
+	}
+}
+@media screen and(max-width:650px) {
+	.flex-slider {
+		max-width: 315px;
+	}
+}
+.slideText {
+	white-space: nowrap;
+	display: block;
+	padding: 10px 5px;
+	background: $midle;
+}
+.arrow {
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	transition: all 0.5s ease-out;
+	cursor: pointer;
+
+}
+.leftArrow{
+	background: url("../image/arrow.png") -510px -162px;
+	top: 54%;
+	left: 4%;
+	transform: translate(0, -50%);
+	&:hover {
+		left: 3.2%;
+	}
+
+}
+.rightArrow {
+		background: url("../image/arrow.png") -364px -162px;
+	top: 54%;
+	right: 4%;
+	transform: translate(0, -50%);
+	&:hover {
+		right: 3.2%;
+	}
+
+}
+
+
+a.click_button{
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	background: $midle;
+	border: 1px solid $dark;
+	border-radius: 100%;
+	margin: 25px 4px;
+	&:hover {
+		background: $very_dark;
+	}
+}
+
+
+
+
+/*---------------------*/
+
+.slide {
+	display:block;
+	float: left;
+	margin-left: 5px;
+	border-radius: 15px;
+	overflow: hidden;
+				transition: all 0.5s ease-out;
+	&:hover {
+		cursor:pointer ;
+		box-shadow: 0 0 5px 2px black;
+		transform: scale(1.02, 1.02);
+
+	}
+
+}
+#slide_list {
+	position: absolute;
+	float: left;
+	width: 10000px;
+	height: 245px;
+	transition: all 0.5s ease-out;
+	padding-top: 5px;
+}
+
+.flex-slider {
+	overflow: hidden;
+}
+
+.leftArrow {
+	display: none;
+}
+.slideText {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.slideEmpty {
+	max-width: 150px;
+	border: 1px solid black;
+
+}
+.slideImgEmpty {
+	height: 190px;
+	width: 150px;
+	background: $dark;
+}
+.slideTextEmpty {
+	display: block;
+	padding: 10px 5px;
+	background: $midle;
+}
+.slideEmpty {
+	display:block;
+	float: left;
+	margin-left: 5px;
+	max-width: 150px;
+	border: 1px solid black;
+	border-radius: 15px;
+	overflow: hidden;
+}

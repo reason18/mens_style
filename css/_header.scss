@@ -1,0 +1,91 @@
+#header {
+	position: relative;
+	max-width: 768px;
+	height: 48px;
+	padding: 0 10px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	background: $dark;
+}
+
+.nav_items {
+	display: inline-block;
+	a {
+		display: block;
+		font-weight: 600;
+		padding: 15px 10px;
+		transition: all 0.5s ease-out;
+		&:hover {
+		color:  $light;
+		}
+	}
+}
+.right_nav {
+	padding-top: 10px;
+}
+.profile_items {
+	display: inline-block;
+	vertical-align: middle;
+	height: 22px;
+	width:30px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.search  {
+	background: url("../image/topnav_icon.png") -10px -63px;
+	&:hover {
+		background: url("../image/topnav_icon.png") -10px -12px;
+	}
+}
+.account  {
+	background: url("../image/topnav_icon.png") -110px -63px;
+	&:hover {
+		background: url("../image/topnav_icon.png") -110px -12px;
+	}
+}
+.basket  {
+	background: url("../image/topnav_icon.png") -58px -63px;
+	&:hover {
+		background: url("../image/topnav_icon.png") -58px -12px;
+	}
+}
+.logo {
+	position: absolute;
+	left: 50%;
+	top: 50px;
+	transform: translate(-50%, -50%);
+		z-index: 1;
+}
+.logo_img {
+	height: 70px;
+	width: 70px;
+	z-index: 1;
+}
+.drop_menu {
+	display: none;
+	height: 20px;
+	width: 30px;
+	background: url("../image/topnav_icon.png") -162px -63px;
+}
+
+@media screen and (max-width: 650px) {
+	.logo_img {
+		height: 50px;
+		width: 50px;
+	}
+	.logo {
+		top: 0;
+		transform: translate(-50%, 0%);
+	}
+	.nav_items {
+		display: none;
+	}
+	.drop_menu {
+		display: inline-block;
+	}
+	.left_head {
+		padding-top: 10px;
+	}
+}

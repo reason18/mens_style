@@ -1,0 +1,30 @@
+$very_dark: #001b21;
+$dark : #002a40; 
+$midle : #005176;
+$light : #4d98c2;
+$for_h1: black;
+$for_hipperlink: white;
+$slider_img_size: 150px;
+body {
+	background: url('../image/background.png') fixed;
+		font-family: Verdana, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: $for_hipperlink;
+}
+h1 {
+	font-size: 48px;
+	color: $for_h1;
+}
+h2 {
+	font-size: 24px;
+	padding: 20px 0;
+	text-align: center;
+}
+.wrap {
+	max-width: 768px;
+	margin: 10px auto;
+	color:white;
+}

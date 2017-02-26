@@ -1,0 +1,110 @@
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_header.scss";
+@import "_promo.scss";
+@import "_slider.scss";
+@import "_catalog.scss";
+@import "_aboutUs.scss";
+@import "_contacts.scss";
+@import "_footer.scss";
+@import "_account.scss";
+@import "_buyWindow.scss";
+@import "_basket.scss";
+
+
+.panel {
+    position: fixed;
+    top: 50%;
+    width: 40px;
+    height: 200px;
+    background: #001fa7;
+    margin-top: -100px;
+    left: 0;
+    opacity: .97;
+    transition-duration: .5s;
+    &:hover {
+        transform: translateX(400px);
+    }
+    & .panel-label {
+        position: absolute;
+        width: 200px;
+        height: 40px;
+        transform: rotate(90deg);
+        left: -80px;
+        top: 80px;
+        vertical-align: middle;
+        line-height: 40px;
+        text-transform: uppercase;
+        font-size: 20px;
+        text-align: center;
+        word-spacing: 5px;
+        color: #fff;
+        font-weight: 700;
+    }
+    & .admin-content {
+        height: 400px;
+        width: 400px;
+        padding: 20px;
+        background: $very_dark;
+        position: absolute;
+        right: 40px;
+        margin-top: -100px;
+        border: 1px solid black;
+        box-shadow: 7px 0px 16px 1px rgba(0, 0, 0, 0.75);
+    }
+}
+.admin-content {
+	h2 {
+		color: white;
+	}
+}
+
+#adminForm {
+	width: 70%;
+	margin: 0 auto;
+	.inputLabel{
+		display: inline-block;
+		padding: 8px 10px;
+		padding-right: 0;
+		height: 35px;
+		box-sizing: border-box;
+		width: 80px;
+		background: $dark;
+		color: white;
+
+	}
+	input:focus {
+		outline: none;
+	}
+	#submitTimer {
+		display: inline-block;
+		margin-top: 15px;
+		border: 2px solid green;
+		background: $very_dark;
+		color: green;
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.04,1.04);
+		}
+	}
+}
+/*--------------HEADER-----------------*/
+
+
+/*--------------PROMO------------------*/
+
+
+/*--------------SLIDER-----------------*/
+
+
+/*--------------CATALOG----------------*/
+
+
+/*--------------ABOUT US---------------*/
+
+
+/*--------------CONTACTS---------------*/
+
+
+/*--------------FOOTER------------------*/
+
